@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* Brand tokens. Clinics override --brand-* at runtime from clinics.brand. */
+:root {
+  --brand-primary: #0f766e;
+  --brand-accent: #f0654f;
+  --background: #f4f9f8;
+  --foreground: #0f1f1d;
+  --muted: #5b6f6c;
+  --card: #ffffff;
+  --border: #d5e4e1;
+}
+
+:root[data-theme="dark"],
+:root:not([data-theme="light"]) {
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --brand-primary: #2dd4bf;
+    --background: #0b1514;
+    --foreground: #e6f2f0;
+    --muted: #9bb3af;
+    --card: #11201e;
+    --border: #1f3532;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --brand-primary: #2dd4bf;
+  --background: #0b1514;
+  --foreground: #e6f2f0;
+  --muted: #9bb3af;
+  --card: #11201e;
+  --border: #1f3532;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-brand: var(--brand-primary);
+  --color-accent: var(--brand-accent);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
