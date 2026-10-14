@@ -147,3 +147,9 @@ A running log of the user's prompts and the key outcome of each, in order. Updat
 > do we need to use n8n or make.com free version
 
 **Outcome:** Decision: NOT needed. Reminders use Vercel Cron / Supabase pg_cron, email via Resend, staff alerts via Supabase Realtime. Reasons: patient data would leave our system to third parties without BAAs, booking needs transactional DB guarantees, free tiers are small, self-hosting n8n needs a server. Possible later only for non-PHI automations (Slack alerts, social posting, marketing leads).
+
+## Prompt 21 — "ok"
+
+> ok
+
+**Outcome:** Took it as a go-ahead for the CI protections. Added gitleaks job to `ci.yml`, `codeql.yml` (push/PR/weekly), `dependabot.yml` (npm + Actions, weekly). All green on `main`. Enabled branch protection on `main`: required checks `check`, `secrets`, `analyze`; no force-push; no deletion; admin (owner) can still bypass; no PR review required (solo dev). GitHub secret scanning + push protection confirmed enabled. Dependabot immediately opened 2 PRs (checkout 4->7, gitleaks-action 2->3), left open for review. Phase 2 still awaiting explicit go-ahead.

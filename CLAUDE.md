@@ -180,6 +180,8 @@ Not done yet: no real Supabase project connected (migrations not applied remotel
 
 Frontend today: framework + brand tokens + one placeholder page only. No website pages, booking form, agent widget, admin panel, or login screens exist yet.
 
+CI/security on GitHub: `ci.yml` (gitleaks `secrets` job, then `check`: lint, typecheck, tests, audit, build), `codeql.yml` (`analyze`), Dependabot weekly (npm + Actions). Branch protection on `main` requires `check`, `secrets`, `analyze`; no force-push/deletion; owner can bypass. GitHub secret scanning + push protection enabled. Review Dependabot PRs before merging (majors may break); Actions are still tag-pinned (pin to SHAs in Phase 7).
+
 Git (as of 2026-10-14): `main` == `origin/main`, clean tree, CI green. Dev server is started with `npm run dev` (http://localhost:3000).
 
 Next: Phase 2 (public website; use the frontend-design skill), then Phase 3 (availability engine + manual booking). Awaiting user go-ahead for Phase 2. Also still needed from the user for later phases: a Supabase project URL + anon key (service-role key only in `.env.local`/Vercel).
