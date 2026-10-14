@@ -111,3 +111,9 @@ A running log of the user's prompts and the key outcome of each, in order. Updat
 > (answers via the question UI: Tenancy = Separate customers (SaaS); Start Phase 1 = Yes, start now)
 
 **Outcome:** Tenancy decided: full multi-tenant SaaS. Built Phase 1 locally: Next.js 16 scaffold, `supabase/migrations/0001_init.sql`, `supabase/seed.sql`, PGlite-based DB tests (24 pass), brand tokens ("CareDesk"), security headers, env validation, CI workflow. Lint/typecheck/test/build/gitleaks all clean. Not yet done: git init/GitHub push, real Supabase project, demo auth users. Docs updated (CLAUDE.md commands/DB workflow/status, ROADMAP Phase 1 checklist).
+
+## Prompt 15 — Push to GitHub and launch the site
+
+> create a public repo on my github "github.com/gharisj3" as it is already connected with terminal so push everything also launch the server so i can view the site
+
+**Outcome:** Created public repo https://github.com/gharisj3/patient-intake and pushed `main` (commit fd01c95; git author set to `gharisj3@users.noreply.github.com` to avoid exposing a personal email). gitleaks clean before push; remote CI passed (35s). Dev server running at http://localhost:3000 (HTTP 200).

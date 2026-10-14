@@ -173,6 +173,8 @@ Not yet set up: e2e (Playwright), db:migrate against a real Supabase project.
 ## Status
 **Phase 1 (foundation) done locally, 2026-10-14.** Built: Next.js 16 + TS strict + Tailwind v4 scaffold; Supabase SQL migration `0001_init.sql` (multi-tenant schema, roles, overlap-proof appointments via GiST exclusion constraint, walk-in queue tokens, invoices, agent/consent/audit tables, RLS + grants); seed data; 24 passing DB tests (double booking, tenant integrity, RLS isolation, role limits, server-only/append-only tables); brand tokens (`src/config/brand.ts`, `globals.css`; name "CareDesk", teal/coral); baseline security headers; zod env validation (`src/lib/env.ts`); `.env.example`; GitHub Actions CI; gitleaks clean. Lint, typecheck, tests and build all pass.
 
-Not done yet: git repo not initialised / not pushed to GitHub; no real Supabase project connected (migrations not applied remotely); no auth users created; no UI beyond a placeholder landing page.
+Repo: public at https://github.com/gharisj3/patient-intake (branch `main`, CI green). Because the repo is PUBLIC: never commit secrets, real data, or personal emails; git author is the GitHub no-reply address.
+
+Not done yet: no real Supabase project connected (migrations not applied remotely); no auth users created; no UI beyond a placeholder landing page.
 
 Next: Phase 2 (public website; use the frontend-design skill), then Phase 3 (availability engine + manual booking).

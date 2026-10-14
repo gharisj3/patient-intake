@@ -36,7 +36,7 @@ Until Phase 7 is passed: seed/fake patients only, banner on the site "Demo — d
 - [x] Define scope, user roles: `super_admin`, `clinic_admin`, `receptionist`, `doctor`, optional `patient`
 - [x] Next.js 16 + TS strict + Tailwind v4, ESLint, Prettier (shadcn/ui: add when UI work starts)
 - [x] GitHub Actions CI workflow written (lint, typecheck, test, audit, build)
-- [ ] `git init`, push to GitHub, confirm CI passes remotely
+- [x] `git init`, push to GitHub (public: github.com/gharisj3/patient-intake), CI passes remotely
 - [ ] Vercel project (preview deploy per PR) + Supabase project (separate dev/prod projects); apply migrations
 - [x] `.env.example`, env validation with zod
 - [x] DB schema v1 + migration `0001_init.sql` (multi-tenant): clinics, profiles, doctors, patients, services, doctor_services, doctor_schedules, time_off, appointments (4 types, queue tokens), invoices, invoice_items, agent_sessions, agent_messages, consents, queue_counters, audit_log
