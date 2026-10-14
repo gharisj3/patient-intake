@@ -24,6 +24,7 @@ Both booking paths MUST go through one shared booking service. The agent never w
 - **Free LLM limits are tight and change often**; the chat UI must degrade gracefully ("try again shortly"). Check limits in the provider consoles, not blogs.
 - **Free-tier data may be used for training** (Gemini free) -> synthetic data only.
 - **HIPAA: the free stack is NOT compliant.** No real PHI until every vendor touching PHI (hosting, DB, LLM, email, voice, error tracking) has a signed BAA and legal review is done. Confirm the clinic's country (HIPAA vs GDPR/local law). Compliance also needs administrative/physical safeguards (policies, training, breach runbook), not only tech.
+- **No n8n / Make.com.** Automations are built in-app: reminders via Vercel Cron or Supabase `pg_cron`, email via Resend, staff alerts via Supabase Realtime. Never route patient data through third-party automation tools. Revisit only for non-PHI automations (Slack alerts, social posting, marketing leads).
 - Demo site shows a banner: "Demo — do not enter real health information."
 
 ## Stack (free-tier first, production-shaped)

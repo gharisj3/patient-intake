@@ -135,3 +135,15 @@ A running log of the user's prompts and the key outcome of each, in order. Updat
 > update the docs
 
 **Outcome:** Brought all docs up to date (this entry, ROADMAP/CLAUDE.md status). Committed and pushed.
+
+## Prompt 19 — What about the workflows?
+
+> what about the workflows?
+
+**Outcome:** Interpreted as GitHub Actions. Existing: `.github/workflows/ci.yml` (lint, typecheck, tests, npm audit non-blocking, build). Gaps listed: gitleaks in CI, Dependabot, CodeQL, branch protection (do now); pin Actions by SHA (Phase 7); Vercel deploy via Git integration; migration check vs real Supabase; Playwright e2e (Phase 3); agent evals (Phase 5). Offered to add the "now" items.
+
+## Prompt 20 — n8n / Make.com?
+
+> do we need to use n8n or make.com free version
+
+**Outcome:** Decision: NOT needed. Reminders use Vercel Cron / Supabase pg_cron, email via Resend, staff alerts via Supabase Realtime. Reasons: patient data would leave our system to third parties without BAAs, booking needs transactional DB guarantees, free tiers are small, self-hosting n8n needs a server. Possible later only for non-PHI automations (Slack alerts, social posting, marketing leads).
