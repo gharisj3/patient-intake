@@ -45,6 +45,9 @@ Until Phase 7 is passed: seed/fake patients only, banner on the site "Demo — d
 - [x] Seed script with fake data; brand tokens; baseline security headers
 - [ ] Create demo auth users/profiles script (needs a real Supabase project)
 
+## Current status (2026-10-14)
+Phase 1 done locally and pushed (CI green). Phase 2 is next, awaiting user go-ahead. Remaining Phase 1 items: Vercel/Supabase projects and demo auth users (need user's Supabase project).
+
 ## Phase 2 — Public website (week 2)
 - [ ] Home, About, Services, Doctors (public profile pages), Contact, Privacy Policy, Terms
 - [ ] Responsive, accessible, SEO basics, fast (Lighthouse > 90)

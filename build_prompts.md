@@ -117,3 +117,21 @@ A running log of the user's prompts and the key outcome of each, in order. Updat
 > create a public repo on my github "github.com/gharisj3" as it is already connected with terminal so push everything also launch the server so i can view the site
 
 **Outcome:** Created public repo https://github.com/gharisj3/patient-intake and pushed `main` (commit fd01c95; git author set to `gharisj3@users.noreply.github.com` to avoid exposing a personal email). gitleaks clean before push; remote CI passed (35s). Dev server running at http://localhost:3000 (HTTP 200).
+
+## Prompt 16 — Is there any frontend?
+
+> is there any frontend or not?
+
+**Outcome:** Answered: only the framework (Next.js + Tailwind, brand tokens, one placeholder page). No real UI yet: no website pages, booking form, agent widget, admin panel, or login. Proposed Phase 2 (public website) with the frontend-design skill next.
+
+## Prompt 17 — Git status
+
+> what is the stauts for git
+
+**Outcome:** Verified: `main` in sync with `origin/main`, working tree clean, commits fd01c95 and a8989f7, remote https://github.com/gharisj3/patient-intake, both CI runs green.
+
+## Prompt 18 — Update the docs
+
+> update the docs
+
+**Outcome:** Brought all docs up to date (this entry, ROADMAP/CLAUDE.md status). Committed and pushed.

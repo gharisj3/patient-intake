@@ -177,4 +177,8 @@ Repo: public at https://github.com/gharisj3/patient-intake (branch `main`, CI gr
 
 Not done yet: no real Supabase project connected (migrations not applied remotely); no auth users created; no UI beyond a placeholder landing page.
 
-Next: Phase 2 (public website; use the frontend-design skill), then Phase 3 (availability engine + manual booking).
+Frontend today: framework + brand tokens + one placeholder page only. No website pages, booking form, agent widget, admin panel, or login screens exist yet.
+
+Git (as of 2026-10-14): `main` == `origin/main`, clean tree, CI green. Dev server is started with `npm run dev` (http://localhost:3000).
+
+Next: Phase 2 (public website; use the frontend-design skill), then Phase 3 (availability engine + manual booking). Awaiting user go-ahead for Phase 2. Also still needed from the user for later phases: a Supabase project URL + anon key (service-role key only in `.env.local`/Vercel).
