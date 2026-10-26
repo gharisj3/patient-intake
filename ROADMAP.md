@@ -48,7 +48,7 @@ Until Phase 7 is passed: seed/fake patients only, banner on the site "Demo — d
 - [ ] Review/merge the 2 open Dependabot PRs (actions/checkout 4->7, gitleaks-action 2->3)
 
 ## Current status (2026-10-14)
-Phase 1 done locally and pushed (CI green). Phase 2 is next, awaiting user go-ahead. Remaining Phase 1 items: Vercel/Supabase projects and demo auth users (need user's Supabase project).
+Phase 1 foundation pushed; the earlier CI result is historical. GitHub Actions is now disabled; use the local verification commands in README.md. Phase 2 is next, awaiting user go-ahead. Remaining Phase 1 items: Vercel/Supabase projects and demo auth users (need user's Supabase project).
 
 ## Phase 2 — Public website (week 2)
 - [ ] Home, About, Services, Doctors (public profile pages), Contact, Privacy Policy, Terms
